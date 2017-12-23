@@ -1,0 +1,14 @@
+This folder contains 3 files -
+reader.py - this file is for building the dictionaries of words to ids and ids to words and converts the text to number to be fed into the model as batches.
+cbt_word_Im.py - This file build, trains and runs the model.
+Language Modeling Using long short term memory - This is project report.
+
+Command to run the program-
+python3 cbt_word_Im.py --seed_for_sample="the tree grew" --model=small --save_path=SmallConfig --data_path=data/
+
+for producing samples-
+python3 cbt_word_Im.py --seed_for_sample="the tree grew" --model=small --save_path=SmallConfig --data_path=data/ --sample_mode=True
+
+You can add your own configurations and train the model too.
+
+The link for the dataset can be found here - http://www.thespermwhale.com/jaseweston/babi/CBTest.tgz
